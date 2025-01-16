@@ -328,7 +328,7 @@ message DthPack {
 message DthPackAttr {
   optional string user_id = 1;
   optional string subscriber_id = 2 [json_name = "dth__dth-pack-details__subscriber_id"];
-  optional string tariff_id = 3 [json_name = "dth__dth-pack-details__tariff_id"];
+  optional string tariff_id = 3 [json_name = "dth__dth-pack-details__tariffId"];
   optional string dth_pack_ott = 4 [json_name = "dth__dth-pack-details__dth_pack_ott"];
 }
 message LifecycleData {

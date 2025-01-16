@@ -1,0 +1,16 @@
+syntax = "proto2";
+option java_package = "in.wynk";
+option java_multiple_files = true;
+
+message UserSegmentsResponseGrpc {
+  required string userid = 1;
+  required string source = 2;
+  repeated EvaluatedSegmentsGrpc evaluatedSegments = 3;
+}
+
+message EvaluatedSegmentsGrpc{
+  required string segmentId = 1;
+  required int64 lastUpdatedOn = 2;
+  required int64 mostRecentTimeStamp = 3;
+  required int64 leastRecentTimeStamp = 4;
+}
