@@ -14,13 +14,13 @@ public class ProtoHelper {
             Object value = message.getField(field);
             if (field.isRepeated()) {
                 List<?> repeatedValues = (List<?>) value;
-                resultMap.put(field.getName(), processRepeatedField(repeatedValues));
+                resultMap.put(field.getJsonName(), processRepeatedField(repeatedValues));
             } else if (field.getJavaType() == Descriptors.FieldDescriptor.JavaType.MESSAGE) {
                 Message nestedMessage = (Message) value;
                 Map<String, Object> nestedMap = protoToMap(nestedMessage);
                 resultMap.putAll(nestedMap);
             } else {
-                resultMap.put(field.getName(), value);
+                resultMap.put(field.getJsonName(), value);
             }
         }
 
