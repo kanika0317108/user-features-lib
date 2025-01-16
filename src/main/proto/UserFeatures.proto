@@ -15,7 +15,7 @@ message Features {
   optional UserPersona xstream__daily_user_persona = 6;
   optional DthPack dth__dth_pack_details = 7 [json_name = "dth__dth-pack-details"];
   optional LifecycleData xstream__xstream_lifecycle_dataset = 8;
-  optional UserCpMeta30 xstream__xstream_userfeature_base_usercpmetaagg30 = 9;
+  optional UserCpMeta30 xstream__xstream_userfeature_base_userCpMetaAgg30 = 9;
 }
 message UserPower {
   required int64 f0 = 1;
@@ -349,8 +349,8 @@ message UserCpMeta30 {
 }
 message UserCpMeta30Attr {
   optional string userid = 1;
-  repeated CpDistribution xstream__xstream_userfeature_base_usercpmetaagg30__cp_distribution = 2;
-  optional string xstream__xstream_userfeature_base_usercpmetaagg30__day = 3;
+  repeated CpDistribution xstream__xstream_userfeature_base_userCpMetaAgg30__cp_distribution = 2;
+  optional string xstream__xstream_userfeature_base_userCpMetaAgg30__day = 3;
 }
 message CpDistribution {
   optional double playtime_total = 1;
