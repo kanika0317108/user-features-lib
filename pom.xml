@@ -3,7 +3,7 @@
          xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>in.wynk.userGrowth</groupId>
+  <groupId>in.wynk</groupId>
   <artifactId>user-features-lib</artifactId>
   <version>1.0-SNAPSHOT</version>
   <name>Archetype - UserFeaturesLib</name>
@@ -23,6 +23,14 @@
     <protoc.version>3.11.4</protoc.version>
     <grpc.version>1.29.0</grpc.version>
   </properties>
+
+  <distributionManagement>
+    <repository>
+      <id>wynk-nexus-repo-snapshot</id>
+      <url>http://nexus.wynkster.io/repository/wynk-music-core-snapshot/</url>
+    </repository>
+  </distributionManagement>
+
   <dependencyManagement>
     <dependencies>
       <dependency>
