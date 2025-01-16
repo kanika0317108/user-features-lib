@@ -1,5 +1,4 @@
 package in.wynk.userGrowth;
-
 import com.google.protobuf.util.JsonFormat;
 import in.wynk.CompactedUserFeatures;
 
