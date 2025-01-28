@@ -121,6 +121,8 @@ message UserSubsHistAttr {
   optional string xstream__user_attr_subs_history__zee_claim_valid_till_date_ist_formatted = 66 [json_name = "xstream__user_attr_subs_history__zee_claim_valid_till_date_ist_formatted"];
   repeated string xstream__user_attr_subs_history__airtel_plan_list = 67 [json_name = "xstream__user_attr_subs_history__airtel_plan_list"];
   repeated int64 xstream__user_attr_subs_history__planid_list = 68 [json_name = "xstream__user_attr_subs_history__planid_list"];
+  optional bool xstream__user_attr_subs_history__is_149 = 69 [json_name = "xstream__user_attr_subs_history__is_149"];
+  optional string xstream__user_attr_subs_history__is_149_valid_till_date_ist_formatted = 70 [json_name = "xstream__user_attr_subs_history__is_149_valid_till_date_ist_formatted"];
 }
 message UserCpMeta {
   required int64 f0 = 1;
