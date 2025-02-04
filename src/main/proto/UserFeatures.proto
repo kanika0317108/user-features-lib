@@ -16,6 +16,7 @@ message Features {
   optional DthPack dth__dth_pack_details = 7 [json_name = "dth__dth-pack-details"];
   optional LifecycleData xstream__xstream_lifecycle_dataset = 8 [json_name = "xstream__xstream_lifecycle_dataset"];
   optional UserCpMeta30 xstream__xstream_userfeature_base_userCpMetaAgg30 = 9 [json_name = "xstream__xstream_userfeature_base_userCpMetaAgg30"];
+  optional RealtimePersona airtel__xstream_realtime_persona = 10 [json_name = "airtel__xstream-realtime-persona"];
 }
 message UserPower {
   required int64 f0 = 1;
@@ -362,4 +363,7 @@ message CpDistribution {
   optional string market_value = 3 [json_name = "market_value"];
   optional string cost = 4 [json_name = "cost"];
   optional string cp_name = 5 [json_name = "cp_name"];
+}
+message RealtimePersona {
+  repeated string airtel__xstream_realtime_persona__amData = 1 [json_name = "airtel__xstream-realtime-persona__amData"];
 }
