@@ -365,5 +365,10 @@ message CpDistribution {
   optional string cp_name = 5 [json_name = "cp_name"];
 }
 message RealtimePersona {
+  required int64 f0 = 1;
+  required RealtimePersonaAttr f1 = 2;
+  required int32 arity = 3;
+}
+message RealtimePersonaAttr {
   repeated string airtel__xstream_realtime_persona__amData = 1 [json_name = "airtel__xstream-realtime-persona__amData"];
 }
